@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
-document.getElementById('adminLogin').addEventListener('submit',e=>{e.preventDefault();location.href='admin-dashboard.html'});
+const aLog=document.getElementById('adminLogin');if(aLog){aLog.addEventListener('submit',e=>{e.preventDefault();location.href='admin-dashboard.html'});}
 })();
 
 /* ===== blog-details.html :: inline script 1 ===== */
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded',function(){
 /* ===== contact.html :: inline script 1 ===== */
 (function(){
 document.addEventListener('DOMContentLoaded',function(){const b=document.body,r=document.documentElement;b.classList.toggle('dark',(localStorage.getItem('asterra-theme')||'light')==='dark');r.setAttribute('dir',localStorage.getItem('asterra-dir')||'ltr');const t=document.getElementById('themeToggle'),x=document.getElementById('rtlToggle');function icon(){if(!t)return;const d=b.classList.contains('dark'),i=t.querySelector('.theme-icon'),l=t.querySelector('.theme-label');if(i)i.className='bi '+(d?'bi-sun-fill':'bi-moon-stars-fill')+' theme-icon';if(l)l.textContent=d?'Dark':'Light';t.setAttribute('aria-label',d?'Switch to light mode':'Switch to dark mode')}icon();t&&t.addEventListener('click',function(){b.classList.toggle('dark');localStorage.setItem('asterra-theme',b.classList.contains('dark')?'dark':'light');icon()});x&&x.addEventListener('click',function(){const d=r.getAttribute('dir')==='rtl'?'ltr':'rtl';r.setAttribute('dir',d);localStorage.setItem('asterra-dir',d)});const cur=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('nav a[href]').forEach(a=>{if(a.getAttribute('href')===cur){a.classList.add('active');a.setAttribute('aria-current','page');a.closest('.dropdown')?.querySelector('.dropdown-toggle')?.classList.add('active')}});document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
-const form=document.getElementById('contactForm'),success=document.getElementById('successMessage'),date=document.getElementById('date');if(date)date.min=new Date().toISOString().split('T')[0];form.addEventListener('submit',function(e){e.preventDefault();if(!form.checkValidity()){form.classList.add('was-validated');success.style.display='none';return}form.classList.add('was-validated');success.style.display='block';form.reset();form.classList.remove('was-validated');success.scrollIntoView({behavior:'smooth',block:'center'});});});
+const form=document.getElementById('contactForm'),success=document.getElementById('successMessage'),date=document.getElementById('date');if(date)date.min=new Date().toISOString().split('T')[0];if(form){form.addEventListener('submit',function(e){e.preventDefault();if(!form.checkValidity()){form.classList.add('was-validated');if(success){success.classList.add('d-none');success.classList.remove('d-flex');}return}form.classList.add('was-validated');if(success){success.classList.remove('d-none');success.classList.add('d-flex');}form.reset();form.classList.remove('was-validated');if(success){success.scrollIntoView({behavior:'smooth',block:'center'});}})}});
 })();
 
 /* ===== documents.html :: inline script 1 ===== */
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const alertBox = form.querySelector('.form-alert');
       if (alertBox) {
         alertBox.className = 'alert alert-success form-alert mt-3';
-        alertBox.textContent = 'Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.';
+        alertBox.textContent = 'Request submitted successfully! Thank you, your details have been recorded.';
       }
     });
   });
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const alertBox = form.querySelector('.form-alert');
       if (alertBox) {
         alertBox.className = 'alert alert-success form-alert mt-3';
-        alertBox.textContent = 'Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.';
+        alertBox.textContent = 'Request submitted successfully! Thank you, your details have been recorded.';
       }
     });
   });
@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded',function(){
  if(theme){theme.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('asterra-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('asterra-theme')==='dark')document.body.classList.add('dark')}
  const rtl=document.querySelector('[data-rtl-toggle]');
  if(rtl){rtl.addEventListener('click',()=>{document.body.classList.toggle('rtl');document.documentElement.dir=document.body.classList.contains('rtl')?'rtl':'ltr';localStorage.setItem('asterra-rtl',document.body.classList.contains('rtl')?'rtl':'ltr')});if(localStorage.getItem('asterra-rtl')==='rtl'){document.body.classList.add('rtl');document.documentElement.dir='rtl'}}
- document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Thanks — your request has been recorded in this demo. Connect this form to your backend/API for production use.'}}));
+ document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();let a=form.querySelector('.form-alert');if(a){a.className='alert alert-success form-alert mt-3';a.textContent='Request submitted successfully! Thank you, your details have been recorded.'}}));
  document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',function(){document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));this.classList.add('active');let f=this.dataset.filter;document.querySelectorAll('[data-category]').forEach(x=>x.style.display=(f==='all'||x.dataset.category===f)?'':'none')}));
 });
 })();
@@ -434,3 +434,153 @@ document.addEventListener('DOMContentLoaded',function(){
  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
 });
 })();
+
+
+/* ===== Unified Asterra Form Success System ===== */
+(function() {
+  function handleFormSuccess(form) {
+    if (!form || form.dataset.asterraHandled) return;
+    form.dataset.asterraHandled = 'true';
+
+    // 1. Contact / Appointment form
+    if (form.id === 'contactForm') {
+      const success = document.getElementById('successMessage');
+      const date = document.getElementById('date');
+      if (date) date.min = new Date().toISOString().split('T')[0];
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          if (success) {
+            success.classList.add('d-none');
+            success.classList.remove('d-flex');
+          }
+          return;
+        }
+        form.classList.add('was-validated');
+        if (success) {
+          success.classList.remove('d-none');
+          success.classList.add('d-flex');
+        }
+        form.reset();
+        form.classList.remove('was-validated');
+        if (success) {
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+      return;
+    }
+
+    // 2. Admin login form
+    if (form.id === 'adminLogin') {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const success = document.getElementById('adminLoginSuccess');
+        const btn = document.getElementById('adminLoginBtn') || form.querySelector('button');
+        if (success) {
+          success.classList.remove('d-none');
+          success.classList.add('d-flex');
+        }
+        if (btn) {
+          btn.disabled = true;
+          btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Signing in...';
+        }
+        setTimeout(function() {
+          location.href = 'admin-dashboard.html';
+        }, 1000);
+      });
+      return;
+    }
+
+    // 3. Blog comment form
+    if (form.id === 'commentForm') {
+      const success = document.getElementById('commentSuccess');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+        form.classList.add('was-validated');
+        if (success) {
+          success.classList.remove('d-none');
+          success.classList.add('d-flex');
+        }
+        form.reset();
+        form.classList.remove('was-validated');
+        if (success) {
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+      return;
+    }
+
+    // 4. All other forms (Client login, register, newsletter / coming-soon, demo forms)
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (form.checkValidity && !form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+      form.classList.remove('was-validated');
+
+      let alertBox = form.querySelector('.form-alert');
+      if (!alertBox) {
+        alertBox = document.createElement('div');
+        alertBox.className = 'form-alert mt-3';
+        form.appendChild(alertBox);
+      }
+
+      const path = location.pathname.split('/').pop().toLowerCase();
+      if (path === 'login.html') {
+        alertBox.className = 'alert alert-success form-alert mt-3 d-flex align-items-center gap-2 p-3 rounded-3 shadow-sm';
+        alertBox.innerHTML = '<i class="bi bi-check-circle-fill text-success fs-5 flex-shrink-0"></i><div><strong>Sign in successful!</strong> Welcome back to your Asterra client account.</div>';
+      } else if (path === 'register.html') {
+        alertBox.className = 'alert alert-success form-alert mt-3 d-flex align-items-center gap-2 p-3 rounded-3 shadow-sm';
+        alertBox.innerHTML = '<i class="bi bi-check-circle-fill text-success fs-5 flex-shrink-0"></i><div><strong>Account created successfully!</strong> Welcome to Asterra. You can now <a href="login.html" class="alert-link text-decoration-underline fw-bold">Sign In</a> to access your portal.</div>';
+      } else if (path === 'coming-soon.html') {
+        alertBox.className = 'alert alert-success form-alert mt-3 d-flex align-items-center justify-content-center gap-2 p-3 rounded-3 shadow-sm text-start';
+        alertBox.innerHTML = '<i class="bi bi-check-circle-fill text-success fs-5 flex-shrink-0"></i><div><strong>Subscription Confirmed!</strong> Thank you for your interest. We will notify you as soon as this service is live.</div>';
+      } else {
+        alertBox.className = 'alert alert-success form-alert mt-3 d-flex align-items-center gap-2 p-3 rounded-3 shadow-sm';
+        alertBox.innerHTML = '<i class="bi bi-check-circle-fill text-success fs-5 flex-shrink-0"></i><div><strong>Request submitted successfully!</strong> Thank you, your information has been recorded.</div>';
+      }
+
+      form.reset();
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  }
+
+  function initForms() {
+    document.querySelectorAll('form').forEach(handleFormSuccess);
+
+    // Also handle internal note save button in admin dashboard
+    const saveNoteBtn = document.getElementById('saveNoteBtn');
+    if (saveNoteBtn && !saveNoteBtn.dataset.handled) {
+      saveNoteBtn.dataset.handled = 'true';
+      const noteText = document.getElementById('internalNoteText');
+      const noteAlert = document.getElementById('noteSavedAlert');
+      saveNoteBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (noteAlert) {
+          noteAlert.classList.remove('d-none');
+          noteAlert.classList.add('d-flex');
+          setTimeout(function() {
+            if (noteText) noteText.value = '';
+            setTimeout(function() {
+              noteAlert.classList.add('d-none');
+              noteAlert.classList.remove('d-flex');
+            }, 3500);
+          }, 600);
+        }
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initForms);
+  } else {
+    initForms();
+  }
+})();
+
