@@ -8,34 +8,37 @@
 <span class="brand-mark"><i class="bi bi-shield-check"></i></span>
 <span class="brand-name-wrap">Asterra <small>Notary &amp; Attestation</small></span>
 </a>
-<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
+<div class="nav-header-actions d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last">
+<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" title="Toggle theme" type="button">
+<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
+<span class="theme-label d-none d-sm-inline">Light</span>
+</button>
+<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" title="Toggle RTL layout" type="button">
+<span>RTL</span>
+</button>
+<a class="btn btn-gold nav-cta d-none d-lg-inline-flex" href="contact.html#appointment">Book Appointment</a>
+<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ms-1 ms-sm-2" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
+</div>
 <div class="collapse navbar-collapse" id="mainMenu">
 <ul class="navbar-nav mx-lg-auto align-items-lg-center">
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle nav-animated" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item" href="index.html">Home 1 — General</a></li>
-<li><a class="dropdown-item" href="home-2.html">Home 2 — Niche</a></li>
+<li><a class="dropdown-item " href="index.html">Home 1 — General</a></li>
+<li><a class="dropdown-item " href="home-2.html">Home 2 — Niche</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link nav-animated" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link nav-animated" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link active nav-animated" href="services.html">Services</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="fees.html">Fees</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="documents.html">Documents</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="blog.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="contact.html">Contact</a></li>
 </ul>
-<div class="nav-actions">
-<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" type="button">
-<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
-<span class="theme-label">Light</span>
-</button>
-<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" type="button">
-<span>RTL</span>
-</button>
-<a class="btn btn-gold nav-cta" href="contact.html#appointment">Book Appointment</a>
+<div class="mobile-nav-cta d-lg-none text-center pt-3 pb-2 border-top">
+<a class="btn btn-gold w-100 py-2" href="contact.html#appointment">Book Appointment</a>
 </div>
 </div>
 </div>
@@ -53,10 +56,10 @@
 <a class="btn btn-gold btn-lg px-4" href="contact.html#appointment">Book This Service</a>
 <a class="btn btn-outline-secondary btn-lg px-4" href="#process">See the Process</a>
 </div>
-<div class="row g-3 mt-4">
-<div class="col-sm-4"><div class="sd-mini"><strong>1–2 Days</strong><span>Typical turnaround</span></div></div>
-<div class="col-sm-4"><div class="sd-mini"><strong>₹300+</strong><span>Indicative starting fee</span></div></div>
-<div class="col-sm-4"><div class="sd-mini"><strong>Document Review</strong><span>Before notarization</span></div></div>
+<div class="row g-3 mt-4 align-items-stretch">
+<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>1–2 Days</strong><span>Typical turnaround</span></div></div>
+<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>₹300+</strong><span>Indicative starting fee</span></div></div>
+<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>Document Review</strong><span>Before notarization</span></div></div>
 </div>
 </div>
 <div class="col-lg-6">
@@ -224,6 +227,65 @@
 /* ===== service-details.html :: per-service rendering ===== */
 (function(){
 var SERVICES={
+notarization:{
+ name:"Affidavit & Notarization",
+ lead:"Professional preparation and notarization support for affidavits, declarations, agreements and other documents that require a notarial act.",
+ badge:"NOTARIZATION · SERVICE DETAILS 01",
+ mini:[["1–2 Days","Typical turnaround"],["₹300+","Indicative starting fee"],["Document Review","Before notarization"]],
+ image:"assets/image/affidavit-notarization.jpg",
+ alt:"Documents and paperwork prepared for notarization",
+ oEyebrow:"SERVICE OVERVIEW",
+ oTitle:"Professional notarization for legal and personal paperwork",
+ oP1:"Notarization confirms identity, authenticity of execution and execution of documents before an appointed notary. It is widely required for affidavits, statutory declarations, true copy certifications and agreements.",
+ oP2:"Our team assists with proper document readiness, ensures all signatories are prepared with the required identification, and completes formalities with minimal delays.",
+ suited:["Affidavits and sworn statements","Statutory declarations","Certified true copy endorsements","Agreements and undertakings","Financial and banking declarations"],
+ incTitle:"Everything you need before and during notarization",
+ incIntro:"Structured support designed to avoid procedural mistakes and ensure document validity.",
+ features:[
+  {n:"01",t:"Identity Verification",p:"Verify identity and supporting credentials of all executing parties."},
+  {n:"02",t:"Document Readiness",p:"Review document completeness, execution clauses and format."},
+  {n:"03",t:"Notarial Act",p:"Administer oath or affirmation and apply notarial seal and signature."},
+  {n:"04",t:"Certified Copies",p:"Provide attested true copies where multiple duplicates are needed."}
+ ],
+ caseLabel:"COMMON USE CASE",
+ caseTitle:"When an affidavit or declaration is required for formal submission",
+ caseP:"For example, applying for a government scheme, name change declaration, lost document affidavit or property documentation requiring an official notarial seal.",
+ whoEyebrow:"WHO USES THIS SERVICE",
+ whoTitle:"Useful for individuals, families, students and commercial applicants",
+ uses:[
+  {b:"Individuals & Families",s:"Affidavits, declarations, marriage documents and family matters."},
+  {b:"Students & Job Seekers",s:"Educational affidavits, gap-year undertakings and identity verifications."},
+  {b:"Businesses & Startups",s:"Board resolution affirmations, vendor contracts and authorisations."},
+  {b:"Property & Financial",s:"Ownership declarations, tenancy undertakings and bank affidavits."}
+ ],
+ dEyebrow:"DOCUMENT CHECKLIST",
+ dTitle:"What should you bring?",
+ dP:"Ensure you carry original identification and all related paperwork for your appointment.",
+ checklist:[
+  {b:"Original document to be notarized",s:"Unsigned draft or document requiring notarial witnessing."},
+  {b:"Government-issued photo ID",s:"Aadhaar, Passport, Voter ID or Driving Licence."},
+  {b:"Supporting records",s:"Any previous agreements, certificates or referenced annexures."},
+  {b:"Photographs / Stamp paper",s:"Passport photos and non-judicial stamp paper if applicable."}
+ ],
+ warnTitle:"Important before visiting",
+ warnList:[
+  "Do not sign the document beforehand if witnessing is legally mandated.",
+  "Ensure spelling of names matches your government identity proof.",
+  "Bring 2 passport-sized photographs if required for affidavit annexures.",
+  "Check whether state or non-judicial stamp paper is required."
+ ],
+ fTitle:"Transparent fees and quick turnaround",
+ fP:"Template pricing starts from <strong>₹300 per document</strong>, with a typical turnaround of <strong>1–2 days</strong>. Final cost varies with document length, number of stamp papers and additional copies.",
+ faq:[
+  {q:"Do I need to sign the document before the appointment?",a:"Usually, documents requiring a signature before a notary should be executed in the notary's presence. We will confirm instructions for your document."},
+  {q:"What identity proof should I carry?",a:"A valid government photo ID such as an Aadhaar Card, Passport, or PAN card is acceptable."},
+  {q:"Can you draft the affidavit?",a:"We provide document-preparation guidance and templates. For complex dispute matters, legal counsel may be consulted separately."},
+  {q:"Is notarization valid for foreign use?",a:"Not always. If the document is for an overseas destination, an apostille or embassy attestation may also be mandatory."}
+ ],
+ ctaTitle:"Get your affidavit or document notarized promptly",
+ ctaP:"Book an appointment or speak with our documentation desk for same-day or next-day notarization guidance.",
+ desc:"A complete guide to notary services, affidavit preparation, document witnessing and certified copies."
+},
 apostille:{
  name:"Document Apostille",
  lead:"Guidance for documents that need apostille processing for use in participating countries under the Hague Apostille Convention.",
@@ -414,10 +476,10 @@ function heroes(s){
   +'<a class="btn btn-gold btn-lg px-4" href="contact.html#appointment">Book This Service</a>'
   +'<a class="btn btn-outline-secondary btn-lg px-4" href="#process">See the Process</a>'
   +'</div>'
-  +'<div class="row g-3 mt-4">'
-  +'<div class="col-sm-4"><div class="sd-mini"><strong>'+esc(m[0][0])+'</strong><span>'+esc(m[0][1])+'</span></div></div>'
-  +'<div class="col-sm-4"><div class="sd-mini"><strong>'+esc(m[1][0])+'</strong><span>'+esc(m[1][1])+'</span></div></div>'
-  +'<div class="col-sm-4"><div class="sd-mini"><strong>'+esc(m[2][0])+'</strong><span>'+esc(m[2][1])+'</span></div></div>'
+  +'<div class="row g-3 mt-4 align-items-stretch">'
+  +'<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>'+esc(m[0][0])+'</strong><span>'+esc(m[0][1])+'</span></div></div>'
+  +'<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>'+esc(m[1][0])+'</strong><span>'+esc(m[1][1])+'</span></div></div>'
+  +'<div class="col-sm-4 d-flex"><div class="sd-mini w-100"><strong>'+esc(m[2][0])+'</strong><span>'+esc(m[2][1])+'</span></div></div>'
   +'</div></div>'
   +'<div class="col-lg-6"><div class="sd-hero-image-wrap">'
   +'<img alt="'+esc(d.alt)+'" class="sd-hero-image" src="'+esc(d.image)+'"/>'
@@ -442,7 +504,7 @@ function includesHead(s){
   +'<p class="mt-3">'+esc(d.incIntro)+'</p>';
 }
 function includesRow(s){
- return SERVICES[s].features.map(function(f){return '<div class="col-md-6 col-lg-3"><div class="sd-feature"><span>'+esc(f.n)+'</span><h5>'+esc(f.t)+'</h5><p>'+esc(f.p)+'</p></div></div>';}).join('');
+ return SERVICES[s].features.map(function(f){return '<div class="col-md-6 col-lg-3 d-flex"><div class="sd-feature w-100"><span>'+esc(f.n)+'</span><h5>'+esc(f.t)+'</h5><p>'+esc(f.p)+'</p></div></div>';}).join('');
 }
 function who(s){
  var d=SERVICES[s];
@@ -512,7 +574,7 @@ function render(k){
  if(m)m.setAttribute('content',d.desc);
 }
 document.addEventListener('DOMContentLoaded',function(){
- var k=new URLSearchParams(location.search).get('s');
+ var k=new URLSearchParams(location.search).get('s') || 'notarization';
  if(k&&SERVICES[k])render(k);
 });
 })();

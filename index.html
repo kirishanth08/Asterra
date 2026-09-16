@@ -18,16 +18,26 @@
 <span class="brand-mark"><i class="bi bi-shield-check"></i></span>
 <span class="brand-name-wrap">Asterra <small>Notary &amp; Attestation</small></span>
 </a>
-<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
+<div class="nav-header-actions d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last">
+<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" title="Toggle theme" type="button">
+<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
+<span class="theme-label d-none d-sm-inline">Light</span>
+</button>
+<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" title="Toggle RTL layout" type="button">
+<span>RTL</span>
+</button>
+<a class="btn btn-gold nav-cta d-none d-lg-inline-flex" href="contact.html#appointment">Book Appointment</a>
+<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ms-1 ms-sm-2" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
+</div>
 <div class="collapse navbar-collapse" id="mainMenu">
 <ul class="navbar-nav mx-lg-auto align-items-lg-center">
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link active dropdown-toggle nav-animated" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
 <ul class="dropdown-menu">
 <li><a class="dropdown-item active" href="index.html">Home 1 — General</a></li>
-<li><a class="dropdown-item" href="home-2.html">Home 2 — Niche</a></li>
+<li><a class="dropdown-item " href="home-2.html">Home 2 — Niche</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link nav-animated" href="about.html">About</a></li>
@@ -37,15 +47,8 @@
 <li class="nav-item"><a class="nav-link nav-animated" href="blog.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="contact.html">Contact</a></li>
 </ul>
-<div class="nav-actions">
-<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" type="button">
-<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
-<span class="theme-label">Light</span>
-</button>
-<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" type="button">
-<span>RTL</span>
-</button>
-<a class="btn btn-gold nav-cta" href="contact.html#appointment">Book Appointment</a>
+<div class="mobile-nav-cta d-lg-none text-center pt-3 pb-2 border-top">
+<a class="btn btn-gold w-100 py-2" href="contact.html#appointment">Book Appointment</a>
 </div>
 </div>
 </div>
@@ -106,29 +109,29 @@
 </div>
 <div class="col-lg-4 text-lg-end"><a class="btn btn-outline-dark" href="services.html">View All Services</a></div>
 </div>
-<div class="row g-4">
-<div class="col-md-6 col-lg-3">
-<article class="home-service-card">
+<div class="row g-4 align-items-stretch">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="home-service-card w-100 d-flex flex-column">
 <div class="home-service-art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="34" height="52" rx="4"/><path d="M13 15h20M13 23h20M13 31h13"/><circle cx="49" cy="46" r="13"/><path d="M42 46l4.7 4.7L58 37.5"/></svg></div>
-<div class="home-service-body"><h4>Notarization</h4><p>Professional notarization support for affidavits, declarations and common document requirements.</p><a href="service-details.html?s=notarization">Learn More →</a></div>
+<div class="home-service-body d-flex flex-column flex-grow-1"><h4>Notarization</h4><p class="flex-grow-1">Professional notarization support for affidavits, declarations and common document requirements.</p><a class="mt-auto" href="service-details.html?s=notarization">Learn More →</a></div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="home-service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="home-service-card w-100 d-flex flex-column">
 <div class="home-service-art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="30" cy="30" r="19"/><ellipse cx="30" cy="30" rx="8" ry="19"/><path d="M11.5 30h37"/><path d="M47 49l3.6 3.6L60 40"/></svg></div>
-<div class="home-service-body"><h4>Apostille</h4><p>Guidance for documents that need apostille processing for use in international settings.</p><a href="service-details.html?s=apostille">Learn More →</a></div>
+<div class="home-service-body d-flex flex-column flex-grow-1"><h4>Apostille</h4><p class="flex-grow-1">Guidance for documents that need apostille processing for use in international settings.</p><a class="mt-auto" href="service-details.html?s=apostille">Learn More →</a></div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="home-service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="home-service-card w-100 d-flex flex-column">
 <div class="home-service-art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 22L32 9l22 13"/><rect x="14" y="22" width="36" height="34" rx="1"/><path d="M22 22v34M32 22v34M42 22v34"/><rect x="27" y="40" width="10" height="16" rx="1"/><path d="M32 2v7"/><path d="M32 4h8l-2.6 2.6L40 9h-8"/></svg></div>
-<div class="home-service-body"><h4>Embassy Attestation</h4><p>Structured assistance for documents that require embassy-related attestation formalities.</p><a href="service-details.html?s=embassy">Learn More →</a></div>
+<div class="home-service-body d-flex flex-column flex-grow-1"><h4>Embassy Attestation</h4><p class="flex-grow-1">Structured assistance for documents that require embassy-related attestation formalities.</p><a class="mt-auto" href="service-details.html?s=embassy">Learn More →</a></div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="home-service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="home-service-card w-100 d-flex flex-column">
 <div class="home-service-art"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 14h52"/><path d="M32 14v26"/><path d="M23 40h18"/><path d="M10 14v6M20 14v6M36 14v6M44 14v6M54 14v6"/><path d="M3 20h14M7 22h6M47 20h14M51 22h6"/><path d="M10 24h6M48 24h6"/></svg></div>
-<div class="home-service-body"><h4>Power of Attorney</h4><p>Drafting and notarization support for carefully prepared power of attorney documents.</p><a href="service-details.html?s=poa">Learn More →</a></div>
+<div class="home-service-body d-flex flex-column flex-grow-1"><h4>Power of Attorney</h4><p class="flex-grow-1">Drafting and notarization support for carefully prepared power of attorney documents.</p><a class="mt-auto" href="service-details.html?s=poa">Learn More →</a></div>
 </article>
 </div>
 </div>
@@ -143,8 +146,8 @@
 <div class="col-lg-6">
 <div class="story-copy">
 <span class="eyebrow text-white-50">The Asterra Approach</span>
-<h2 class="display-6 fw-bold">A professional welcome, not a complicated process.</h2>
-<p class="text-white-50 mt-3">Our approach is simple: listen first, explain clearly and help you move forward with the documents relevant to your situation.</p>
+<h2 class="display-6 fw-bold mb-2">A professional welcome, not a complicated process.</h2>
+<p class="text-white-50 mt-1 mb-3">Our approach is simple: listen first, explain clearly and help you move forward with the documents relevant to your situation.</p>
 <ul class="story-list">
 <li><i class="bi bi-check-circle-fill"></i><span>Friendly first-step guidance for new clients.</span></li>
 <li><i class="bi bi-check-circle-fill"></i><span>Practical checklists that make preparation easier.</span></li>
@@ -180,10 +183,10 @@
 <div class="col-lg-8"><span class="eyebrow">Client Experience</span><h2 class="display-6 fw-bold home-section-title">Professional support that feels straightforward.</h2></div>
 <div class="col-lg-4 text-lg-end"><a class="btn btn-outline-dark" href="contact.html#appointment">Start a Conversation</a></div>
 </div>
-<div class="row g-4">
-<div class="col-md-4"><div class="home-testimonial"><div class="stars">★★★★★</div><p>“Everything was explained in a simple way, which made the whole document process feel much easier.”</p><strong>Riya S.</strong><small class="d-block">Individual Client</small></div></div>
-<div class="col-md-4"><div class="home-testimonial"><div class="stars">★★★★★</div><p>“The experience felt organised and professional from the first enquiry through to completion.”</p><strong>Arjun M.</strong><small class="d-block">Business Client</small></div></div>
-<div class="col-md-4"><div class="home-testimonial"><div class="stars">★★★★★</div><p>“Clear guidance and a useful checklist helped me prepare without unnecessary back and forth.”</p><strong>Meera K.</strong><small class="d-block">Individual Client</small></div></div>
+<div class="row g-4 align-items-stretch">
+<div class="col-md-4 d-flex"><div class="home-testimonial w-100 d-flex flex-column"><div class="stars mb-3">★★★★★</div><p class="testimonial-quote flex-grow-1">“Everything was explained in a simple way, which made the whole document process feel much easier.”</p><div class="testimonial-profile mt-auto d-flex align-items-center gap-3 pt-3"><img src="assets/image/testimonial-riya.jpg" alt="Riya S." class="testimonial-avatar" width="50" height="50"><div class="testimonial-info"><strong class="testimonial-name d-block">Riya S.</strong><small class="testimonial-role d-block">Individual Client</small></div></div></div></div>
+<div class="col-md-4 d-flex"><div class="home-testimonial w-100 d-flex flex-column"><div class="stars mb-3">★★★★★</div><p class="testimonial-quote flex-grow-1">“The experience felt organised and professional from the first enquiry through to completion.”</p><div class="testimonial-profile mt-auto d-flex align-items-center gap-3 pt-3"><img src="assets/image/testimonial-arjun.jpg" alt="Arjun M." class="testimonial-avatar" width="50" height="50"><div class="testimonial-info"><strong class="testimonial-name d-block">Arjun M.</strong><small class="testimonial-role d-block">Business Client</small></div></div></div></div>
+<div class="col-md-4 d-flex"><div class="home-testimonial w-100 d-flex flex-column"><div class="stars mb-3">★★★★★</div><p class="testimonial-quote flex-grow-1">“Clear guidance and a useful checklist helped me prepare without unnecessary back and forth.”</p><div class="testimonial-profile mt-auto d-flex align-items-center gap-3 pt-3"><img src="assets/image/testimonial-meera.jpg" alt="Meera K." class="testimonial-avatar" width="50" height="50"><div class="testimonial-info"><strong class="testimonial-name d-block">Meera K.</strong><small class="testimonial-role d-block">Individual Client</small></div></div></div></div>
 </div>
 </div>
 </section>

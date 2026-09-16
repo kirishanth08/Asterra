@@ -24,16 +24,26 @@
 <span class="brand-mark"><i class="bi bi-shield-check"></i></span>
 <span class="brand-name-wrap">Asterra <small>Notary &amp; Attestation</small></span>
 </a>
-<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
+<div class="nav-header-actions d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last">
+<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" title="Toggle theme" type="button">
+<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
+<span class="theme-label d-none d-sm-inline">Light</span>
+</button>
+<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" title="Toggle RTL layout" type="button">
+<span>RTL</span>
+</button>
+<a class="btn btn-gold nav-cta d-none d-lg-inline-flex" href="contact.html#appointment">Book Appointment</a>
+<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ms-1 ms-sm-2" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
+</div>
 <div class="collapse navbar-collapse" id="mainMenu">
 <ul class="navbar-nav mx-lg-auto align-items-lg-center">
 <li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link active dropdown-toggle nav-animated" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item active" href="index.html">Home 1 — General</a></li>
-<li><a class="dropdown-item" href="home-2.html">Home 2 — Niche</a></li>
+<li><a class="dropdown-item " href="index.html">Home 1 — General</a></li>
+<li><a class="dropdown-item active" href="home-2.html">Home 2 — Niche</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link nav-animated" href="about.html">About</a></li>
@@ -43,15 +53,8 @@
 <li class="nav-item"><a class="nav-link nav-animated" href="blog.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="contact.html">Contact</a></li>
 </ul>
-<div class="nav-actions">
-<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" type="button">
-<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
-<span class="theme-label">Light</span>
-</button>
-<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" type="button">
-<span>RTL</span>
-</button>
-<a class="btn btn-gold nav-cta" href="contact.html#appointment">Book Appointment</a>
+<div class="mobile-nav-cta d-lg-none text-center pt-3 pb-2 border-top">
+<a class="btn btn-gold w-100 py-2" href="contact.html#appointment">Book Appointment</a>
 </div>
 </div>
 </div>
@@ -62,17 +65,17 @@
 <div class="container">
 <div class="row align-items-center g-5">
 <div class="col-lg-7">
-<div class="home2-kicker">Specialist document services</div>
-<h1 class="home2-title">Documents handled with <span>clarity.</span> Formalities handled with care.</h1>
-<p class="home2-copy">From affidavit notarization to international document attestation, Asterra helps you understand what is required, prepare correctly and move your documents through the right process.</p>
+<div class="home2-kicker">Cross-Border &amp; Corporate Specialist</div>
+<h1 class="home2-title">Cross-Border Legalization &amp; <span>Corporate</span> Attestation.</h1>
+<p class="home2-copy">Specialized consular legalization, commercial apostille, and expatriate document verification for multi-jurisdiction compliance across Hague and non-Hague destinations.</p>
 <div class="hero-actions">
-<a class="btn btn-gold btn-lg" href="contact.html#appointment">Book a Consultation</a>
-<a class="hero-outline" href="services.html">Explore Our Services</a>
+<a class="btn btn-gold btn-lg" href="contact.html#appointment">Schedule Consular Review</a>
+<a class="hero-outline" href="services.html">Explore Attestation Routes</a>
 </div>
 <div class="hero-trust">
-<div><strong>04</strong><small>Core services</small></div>
-<div><strong>01</strong><small>Clear workflow</small></div>
-<div><strong>100%</strong><small>Client-focused guidance</small></div>
+<div><strong>120+</strong><small>Hague Nations</small></div>
+<div><strong>45+</strong><small>Diplomatic Missions</small></div>
+<div><strong>100%</strong><small>Consular Verified</small></div>
 </div>
 </div>
 <div class="col-lg-5">
@@ -86,80 +89,80 @@
 <section class="section-pad reveal">
 <div class="container">
 <div class="service-intro">
-<span class="eyebrow">Our Core Services</span>
-<h2 class="display-6 fw-bold home2-section-title">One professional destination for essential document formalities.</h2>
-<p class="mt-3">Choose the service you need and get a clear view of the documents, process and expected timeline before you proceed.</p>
+<span class="eyebrow">Corporate &amp; Expatriate Services</span>
+<h2 class="display-6 fw-bold home2-section-title">Specialized attestation routes for cross-border transactions.</h2>
+<p class="mt-3">Select your document category for multi-tiered verification spanning Notary, State Home Dept, MEA and Foreign Embassies.</p>
 </div>
-<div class="row g-4 service-grid">
-<div class="col-md-6 col-lg-3">
-<article class="service-card">
+<div class="row g-4 service-grid align-items-stretch">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="service-card w-100 d-flex flex-column">
 <span class="service-ribbon">01</span>
 <div class="service-card-image">
 <img alt="Affidavit notarization with notary stamp" class="service-card-image-img" src="assets/image/affidavit-service.jpg"/>
 </div>
-<div class="service-card-body">
-<span class="service-tag">Notarization</span>
-<h4>Affidavit &amp; Notarization</h4>
-<p>Notarization support for declarations, affidavits and commonly required legal paperwork.</p>
-<ul class="service-features">
-<li><i class="bi bi-check2"></i>Affidavits &amp; declarations</li>
-<li><i class="bi bi-check2"></i>Certified true copies</li>
+<div class="service-card-body d-flex flex-column flex-grow-1">
+<span class="service-tag">Corporate Notary</span>
+<h4>Board &amp; Commercial Notarization</h4>
+<p>Verification for commercial resolutions, corporate affidavits, and director declarations.</p>
+<ul class="service-features mb-3 flex-grow-1">
+<li><i class="bi bi-check2"></i>Board resolutions &amp; MOA</li>
+<li><i class="bi bi-check2"></i>Commercial declarations</li>
 </ul>
-<a class="btn btn-outline-brand btn-sm w-100" href="service-details.html?s=notarization">View Details <i class="bi bi-arrow-right"></i></a>
+<a class="btn btn-outline-brand btn-sm w-100 mt-auto" href="service-details.html?s=notarization">View Details <i class="bi bi-arrow-right"></i></a>
 </div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="service-card w-100 d-flex flex-column">
 <span class="service-ribbon">02</span>
 <div class="service-card-image">
 <img alt="Official document apostille certificate on a desk" class="service-card-image-img" src="assets/image/apostille-service.jpg"/>
 </div>
-<div class="service-card-body">
-<span class="service-tag">Apostille</span>
-<h4>Document Apostille</h4>
-<p>Guidance for documents that need apostille processing for use outside the country.</p>
-<ul class="service-features">
-<li><i class="bi bi-check2"></i>Hague destinations</li>
-<li><i class="bi bi-check2"></i>Authentication route</li>
+<div class="service-card-body d-flex flex-column flex-grow-1">
+<span class="service-tag">Hague Apostille</span>
+<h4>Expatriate &amp; Trade Apostille</h4>
+<p>MEA-stamped Apostille stickers for employment, degrees, and trade certs across 120+ Hague nations.</p>
+<ul class="service-features mb-3 flex-grow-1">
+<li><i class="bi bi-check2"></i>Personal &amp; educational certs</li>
+<li><i class="bi bi-check2"></i>Export &amp; commercial invoices</li>
 </ul>
-<a class="btn btn-outline-brand btn-sm w-100" href="service-details.html?s=apostille">View Details <i class="bi bi-arrow-right"></i></a>
+<a class="btn btn-outline-brand btn-sm w-100 mt-auto" href="service-details.html?s=apostille">View Details <i class="bi bi-arrow-right"></i></a>
 </div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="service-card w-100 d-flex flex-column">
 <span class="service-ribbon">03</span>
 <div class="service-card-image">
 <img alt="Government embassy attestation and consular legalization" class="service-card-image-img" src="assets/image/embassy-service.jpg"/>
 </div>
-<div class="service-card-body">
-<span class="service-tag">Embassy</span>
-<h4>Embassy Attestation</h4>
-<p>Structured assistance for embassy-related document attestation requirements.</p>
-<ul class="service-features">
-<li><i class="bi bi-check2"></i>Non-Hague routes</li>
-<li><i class="bi bi-check2"></i>Seq. coordination</li>
+<div class="service-card-body d-flex flex-column flex-grow-1">
+<span class="service-tag">Consular Legalization</span>
+<h4>Diplomatic Embassy Attestation</h4>
+<p>End-to-end legalization for UAE, Qatar, Kuwait, Saudi Arabia, and non-Hague diplomatic missions.</p>
+<ul class="service-features mb-3 flex-grow-1">
+<li><i class="bi bi-check2"></i>State HRD &amp; Home Dept</li>
+<li><i class="bi bi-check2"></i>MEA &amp; Embassy stamping</li>
 </ul>
-<a class="btn btn-outline-brand btn-sm w-100" href="service-details.html?s=embassy">View Details <i class="bi bi-arrow-right"></i></a>
+<a class="btn btn-outline-brand btn-sm w-100 mt-auto" href="service-details.html?s=embassy">View Details <i class="bi bi-arrow-right"></i></a>
 </div>
 </article>
 </div>
-<div class="col-md-6 col-lg-3">
-<article class="service-card">
+<div class="col-md-6 col-lg-3 d-flex">
+<article class="service-card w-100 d-flex flex-column">
 <span class="service-ribbon">04</span>
 <div class="service-card-image">
 <img alt="Power of attorney document signature and notarization" class="service-card-image-img" src="assets/image/poa-service.jpg"/>
 </div>
-<div class="service-card-body">
-<span class="service-tag">POA</span>
-<h4>Power of Attorney</h4>
-<p>Drafting and notarization support for POA documents prepared around your requirements.</p>
-<ul class="service-features">
-<li><i class="bi bi-check2"></i>General / specific</li>
-<li><i class="bi bi-check2"></i>Notarization</li>
+<div class="service-card-body d-flex flex-column flex-grow-1">
+<span class="service-tag">Cross-Border POA</span>
+<h4>NRI &amp; Overseas Power of Attorney</h4>
+<p>Bilingual drafting and consular notarization for overseas property transfer and business representation.</p>
+<ul class="service-features mb-3 flex-grow-1">
+<li><i class="bi bi-check2"></i>Special &amp; General POA</li>
+<li><i class="bi bi-check2"></i>Sub-registrar compliance</li>
 </ul>
-<a class="btn btn-outline-brand btn-sm w-100" href="service-details.html?s=poa">View Details <i class="bi bi-arrow-right"></i></a>
+<a class="btn btn-outline-brand btn-sm w-100 mt-auto" href="service-details.html?s=poa">View Details <i class="bi bi-arrow-right"></i></a>
 </div>
 </article>
 </div>

@@ -1,0 +1,1008 @@
+{
+  "index.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<h2 class=\"display-6 fw-bold\">",
+      "text": "A professional welcome, not a complicated process.",
+      "fgColor": "rgb(20, 40, 61)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.story-panel",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"eyebrow text-white-50\">",
+      "text": "LET'S GET STARTED",
+      "fgColor": "rgba(255, 255, 255, 0.5)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"text-white-50 mb-0\">",
+      "text": "Tell us what you need and we'll help you understan",
+      "fgColor": "rgba(255, 255, 255, 0.5)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    }
+  ],
+  "home-2.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<h1 class=\"home2-title\">",
+      "text": "Documents handled with clarity. Formalities handle",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "clarity.",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.39",
+      "dist": 148
+    },
+    {
+      "element": "<p class=\"home2-copy\">",
+      "text": "From affidavit notarization to international docum",
+      "fgColor": "rgba(255, 255, 255, 0.8)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<a class=\"hero-outline\">",
+      "text": "Explore Our Services",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "04",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.39",
+      "dist": 148
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "01",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.39",
+      "dist": 148
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "100%",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.39",
+      "dist": 148
+    },
+    {
+      "element": "<span class=\"service-ribbon\">",
+      "text": "01",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "article.service-card",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-tag\">",
+      "text": "NOTARIZATION",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgba(199, 162, 91, 0.16)",
+      "bgContainer": "span.service-tag",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-ribbon\">",
+      "text": "02",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "article.service-card",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-tag\">",
+      "text": "APOSTILLE",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgba(199, 162, 91, 0.16)",
+      "bgContainer": "span.service-tag",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-ribbon\">",
+      "text": "03",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "article.service-card",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-tag\">",
+      "text": "EMBASSY",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgba(199, 162, 91, 0.16)",
+      "bgContainer": "span.service-tag",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-ribbon\">",
+      "text": "04",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "article.service-card",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<span class=\"service-tag\">",
+      "text": "POA",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgba(199, 162, 91, 0.16)",
+      "bgContainer": "span.service-tag",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<h2 class=\"display-6 fw-bold\">",
+      "text": "The right document is only the beginning.",
+      "fgColor": "rgb(20, 40, 61)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "1.00",
+      "dist": 0
+    },
+    {
+      "element": "<li class=\"\">",
+      "text": "Understand the purpose and destination of the docu",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Understand the purpose and destination of the docu",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<li class=\"\">",
+      "text": "Identify supporting paperwork before processing be",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Identify supporting paperwork before processing be",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<li class=\"\">",
+      "text": "Reduce avoidable delays caused by missing informat",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Reduce avoidable delays caused by missing informat",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<li class=\"\">",
+      "text": "Keep the client informed about the next step.",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Keep the client informed about the next step.",
+      "fgColor": "rgb(95, 109, 118)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "div.split-panel",
+      "contrast": "2.81",
+      "dist": 201
+    },
+    {
+      "element": "<span class=\"eyebrow text-white-50\">",
+      "text": "NEED HELP WITH A DOCUMENT?",
+      "fgColor": "rgba(255, 255, 255, 0.5)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"text-white-50 mb-0\">",
+      "text": "Book an appointment and tell us what you need nota",
+      "fgColor": "rgba(255, 255, 255, 0.5)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    }
+  ],
+  "about.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<p class=\"mt-4 text-secondary\">",
+      "text": "Important documents often come with important dead",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<p class=\"text-secondary\">",
+      "text": "Asterra was shaped around a simple idea: professio",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<span class=\"eyebrow\">",
+      "text": "OUR MISSION",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.34",
+      "dist": 138
+    },
+    {
+      "element": "<h2 class=\"mt-3\">",
+      "text": "Make formal document processes easier to understan",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"mt-4 mb-0 opacity-75\">",
+      "text": "We aim to provide dependable guidance, transparent",
+      "fgColor": "rgba(255, 255, 255, 0.92)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<strong class=\"fs-4\">",
+      "text": "01",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"small opacity-75 mb-0 mt-2\">",
+      "text": "Listen to the requirement",
+      "fgColor": "rgba(255, 255, 255, 0.95)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<strong class=\"fs-4\">",
+      "text": "02",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"small opacity-75 mb-0 mt-2\">",
+      "text": "Guide the preparation",
+      "fgColor": "rgba(255, 255, 255, 0.95)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<strong class=\"fs-4\">",
+      "text": "03",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"small opacity-75 mb-0 mt-2\">",
+      "text": "Coordinate the process",
+      "fgColor": "rgba(255, 255, 255, 0.95)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<strong class=\"fs-4\">",
+      "text": "04",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"small opacity-75 mb-0 mt-2\">",
+      "text": "Keep the next step clear",
+      "fgColor": "rgba(255, 255, 255, 0.95)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "1.12",
+      "dist": 44
+    },
+    {
+      "element": "<p class=\"text-secondary mt-3\">",
+      "text": "Our service experience is guided by four principle",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<p class=\"text-secondary mt-4\">",
+      "text": "From an initial document check to the final handov",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"text-secondary mb-0\">",
+      "text": "We begin by understanding why the document is need",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"text-secondary mb-0\">",
+      "text": "Use practical checklists and guidance to prepare t",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"text-secondary mb-0\">",
+      "text": "The required notarization, apostille or attestatio",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"text-secondary mb-0\">",
+      "text": "We keep the final stage clear so you understand wh",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.section.soft-section.reveal",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"text-secondary mt-3 mb-0\">",
+      "text": "Asterra's front-facing team is designed around acc",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<h2 class=\"section-title mt-3 mb-3\">",
+      "text": "Let's make your document process clearer.",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"text-secondary mb-0\">",
+      "text": "Tell us what you need, where the document will be ",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    }
+  ],
+  "services.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    },
+    {
+      "element": "<span class=\"eyebrow\">",
+      "text": "READY TO BEGIN?",
+      "fgColor": "rgb(234, 208, 141)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.39",
+      "dist": 148
+    },
+    {
+      "element": "<h2 class=\"section-title mt-2\">",
+      "text": "Tell us what document you need to process.",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"text-white-50 mb-0\">",
+      "text": "Start with a simple enquiry and get a clearer idea",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    }
+  ],
+  "service-details.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<a class=\"btn btn-outline-secondary btn-lg px-4\">",
+      "text": "See the Process",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "01",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "02",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "03",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "04",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<p class=\"\">",
+      "text": "For example, an organization may ask for a notariz",
+      "fgColor": "rgb(98, 113, 122)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "div.sd-usecase-box",
+      "contrast": "4.49",
+      "dist": 388
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Bring the document that will be signed or notarize",
+      "fgColor": "rgb(105, 117, 125)",
+      "bgColor": "rgb(247, 249, 248)",
+      "bgContainer": "section.sd-section.sd-soft.py-5",
+      "contrast": "4.47",
+      "dist": 397
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Carry an accepted government-issued identity docum",
+      "fgColor": "rgb(105, 117, 125)",
+      "bgColor": "rgb(247, 249, 248)",
+      "bgContainer": "section.sd-section.sd-soft.py-5",
+      "contrast": "4.47",
+      "dist": 397
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Keep any papers referred to in the affidavit or de",
+      "fgColor": "rgb(105, 117, 125)",
+      "bgColor": "rgb(247, 249, 248)",
+      "bgContainer": "section.sd-section.sd-soft.py-5",
+      "contrast": "4.47",
+      "dist": 397
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "Bring any checklist or wording requirements provid",
+      "fgColor": "rgb(105, 117, 125)",
+      "bgColor": "rgb(247, 249, 248)",
+      "bgContainer": "section.sd-section.sd-soft.py-5",
+      "contrast": "4.47",
+      "dist": 397
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "01",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "02",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "03",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "04",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<p class=\"mx-auto mt-3\">",
+      "text": "Share your document requirement with our team and ",
+      "fgColor": "rgb(98, 113, 122)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.sd-cta.py-5",
+      "contrast": "4.49",
+      "dist": 388
+    }
+  ],
+  "fees.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<p class=\"mb-0 text-secondary\">",
+      "text": "Typical service window for straightforward notariz",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.fees-section.bg-soft",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"mb-0 text-secondary\">",
+      "text": "Indicative coordination window for eligible docume",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.fees-section.bg-soft",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"mb-0 text-secondary\">",
+      "text": "A sample range for destination-specific attestatio",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.fees-section.bg-soft",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<p class=\"mb-0 text-secondary\">",
+      "text": "Typical preparation window when the required infor",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.fees-section.bg-soft",
+      "contrast": "4.17",
+      "dist": 371
+    },
+    {
+      "element": "<span class=\"eyebrow\">",
+      "text": "IMPORTANT NOTE",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "2.20",
+      "dist": 279
+    },
+    {
+      "element": "<h2 class=\"\">",
+      "text": "Government and embassy charges may be separate.",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"mb-0\">",
+      "text": "The prices on this template represent service-fee ",
+      "fgColor": "rgba(255, 255, 255, 0.78)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<span class=\"eyebrow\">",
+      "text": "READY TO START?",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "2.20",
+      "dist": 279
+    },
+    {
+      "element": "<h2 class=\"\">",
+      "text": "Get a clear estimate for your documents.",
+      "fgColor": "rgb(255, 255, 255)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    },
+    {
+      "element": "<p class=\"mx-auto mt-3\">",
+      "text": "Tell us what you need attested, notarized or prepa",
+      "fgColor": "rgba(255, 255, 255, 0.78)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "1.09",
+      "dist": 34
+    }
+  ],
+  "documents.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<a class=\"btn btn-outline-secondary btn-lg px-4\">",
+      "text": "Ask Our Team",
+      "fgColor": "rgb(108, 117, 125)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.30",
+      "dist": 381
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "01",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "02",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "03",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<span class=\"\">",
+      "text": "04",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-feature",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "01",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "02",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "03",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<strong class=\"\">",
+      "text": "04",
+      "fgColor": "rgb(199, 162, 91)",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgContainer": "div.sd-step",
+      "contrast": "2.40",
+      "dist": 313
+    },
+    {
+      "element": "<p class=\"mx-auto mt-3\">",
+      "text": "Tell us what you are trying to process and where t",
+      "fgColor": "rgb(98, 113, 122)",
+      "bgColor": "rgb(237, 243, 241)",
+      "bgContainer": "section.sd-cta.py-5",
+      "contrast": "4.49",
+      "dist": 388
+    }
+  ],
+  "blog.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    }
+  ],
+  "blog-details.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    }
+  ],
+  "contact.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    },
+    {
+      "element": "<h2 class=\"text-white\">",
+      "text": "Need help choosing the right service?",
+      "fgColor": "rgb(20, 40, 61)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "section.cta-strip",
+      "contrast": "1.00",
+      "dist": 0
+    }
+  ],
+  "pricing.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    }
+  ],
+  "login.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 238)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.60",
+      "dist": 237
+    }
+  ],
+  "register.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    }
+  ],
+  "coming-soon.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    },
+    {
+      "element": "<a class=\"d-inline-block mt-5 text-decoration-underline\">",
+      "text": "Return to Asterra",
+      "fgColor": "rgb(13, 110, 253)",
+      "bgColor": "rgb(247, 245, 239)",
+      "bgContainer": "body",
+      "contrast": "4.13",
+      "dist": 383
+    }
+  ],
+  "admin-login.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    }
+  ],
+  "admin-dashboard.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    }
+  ],
+  "404.html": [
+    {
+      "element": "<a class=\"navbar-brand d-flex align-items-center gap-2\">",
+      "text": "Asterra\nNOTARY & ATTESTATION",
+      "fgColor": "rgb(0, 0, 0)",
+      "bgColor": "rgb(20, 40, 61)",
+      "bgContainer": "a.navbar-brand.d-flex.align-items-center.gap-2",
+      "contrast": "1.40",
+      "dist": 121
+    }
+  ]
+}

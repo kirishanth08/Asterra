@@ -21,34 +21,37 @@
 <span class="brand-mark"><i class="bi bi-shield-check"></i></span>
 <span class="brand-name-wrap">Asterra <small>Notary &amp; Attestation</small></span>
 </a>
-<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
+<div class="nav-header-actions d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last">
+<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" title="Toggle theme" type="button">
+<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
+<span class="theme-label d-none d-sm-inline">Light</span>
+</button>
+<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" title="Toggle RTL layout" type="button">
+<span>RTL</span>
+</button>
+<a class="btn btn-gold nav-cta d-none d-lg-inline-flex" href="contact.html#appointment">Book Appointment</a>
+<button aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ms-1 ms-sm-2" data-bs-target="#mainMenu" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
+</div>
 <div class="collapse navbar-collapse" id="mainMenu">
 <ul class="navbar-nav mx-lg-auto align-items-lg-center">
 <li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link active dropdown-toggle nav-animated" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
+<a aria-expanded="false" class="nav-link dropdown-toggle nav-animated" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
 <ul class="dropdown-menu">
-<li><a class="dropdown-item active" href="index.html">Home 1 — General</a></li>
-<li><a class="dropdown-item" href="home-2.html">Home 2 — Niche</a></li>
+<li><a class="dropdown-item " href="index.html">Home 1 — General</a></li>
+<li><a class="dropdown-item " href="home-2.html">Home 2 — Niche</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link nav-animated" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="services.html">Services</a></li>
-<li class="nav-item"><a class="nav-link nav-animated" href="fees.html">Fees</a></li>
+<li class="nav-item"><a class="nav-link active nav-animated" href="fees.html">Fees</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="documents.html">Documents</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="blog.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link nav-animated" href="contact.html">Contact</a></li>
 </ul>
-<div class="nav-actions">
-<button aria-label="Switch to dark mode" class="nav-control" id="themeToggle" type="button">
-<i aria-hidden="true" class="bi bi-sun-fill theme-icon"></i>
-<span class="theme-label">Light</span>
-</button>
-<button aria-label="Switch to RTL layout" class="nav-control" id="rtlToggle" type="button">
-<span>RTL</span>
-</button>
-<a class="btn btn-gold nav-cta" href="contact.html#appointment">Book Appointment</a>
+<div class="mobile-nav-cta d-lg-none text-center pt-3 pb-2 border-top">
+<a class="btn btn-gold w-100 py-2" href="contact.html#appointment">Book Appointment</a>
 </div>
 </div>
 </div>
@@ -77,11 +80,11 @@
 <h2>A simple starting point for common requirements.</h2>
 <p>These figures are sample/template prices and should be replaced with your actual business pricing before publication. Government, embassy, courier and third-party charges may be additional.</p>
 </div>
-<div class="row g-4">
-<div class="col-md-6 col-xl-3 fees-reveal"><div class="fee-card"><span class="eyebrow">01</span><h3>Notarization</h3><div class="fee-price">₹300+ <small>/ document</small></div><ul class="fee-list"><li>Affidavit support</li><li>Signature witnessing</li><li>Certified copy support</li><li>Basic document review</li></ul><a class="btn btn-outline-brand mt-4" href="contact.html">Get Estimate</a></div></div>
-<div class="col-md-6 col-xl-3 fees-reveal"><div class="fee-card featured"><span class="badge-featured">POPULAR</span><span class="eyebrow">02</span><h3>Apostille</h3><div class="fee-price">₹1,500+ <small>/ document</small></div><ul class="fee-list"><li>Document verification</li><li>Apostille processing support</li><li>Status guidance</li><li>Completion coordination</li></ul><a class="btn btn-brand mt-4" href="contact.html">Get Estimate</a></div></div>
-<div class="col-md-6 col-xl-3 fees-reveal"><div class="fee-card"><span class="eyebrow">03</span><h3>Embassy Attestation</h3><div class="fee-price">₹2,500+ <small>/ document</small></div><ul class="fee-list"><li>Requirement review</li><li>Attestation coordination</li><li>Destination-specific guidance</li><li>Completion updates</li></ul><a class="btn btn-outline-brand mt-4" href="contact.html">Get Estimate</a></div></div>
-<div class="col-md-6 col-xl-3 fees-reveal"><div class="fee-card"><span class="eyebrow">04</span><h3>Power of Attorney</h3><div class="fee-price">₹1,000+ <small>/ document</small></div><ul class="fee-list"><li>Drafting assistance</li><li>Formatting review</li><li>Notarization guidance</li><li>Execution checklist</li></ul><a class="btn btn-outline-brand mt-4" href="contact.html">Get Estimate</a></div></div>
+<div class="row g-4 align-items-stretch">
+<div class="col-md-6 col-xl-3 fees-reveal d-flex"><div class="fee-card w-100 d-flex flex-column"><span class="eyebrow">01</span><h3>Notarization</h3><div class="fee-price">₹300+ <small>/ document</small></div><ul class="fee-list flex-grow-1"><li>Affidavit support</li><li>Signature witnessing</li><li>Certified copy support</li><li>Basic document review</li></ul><a class="btn btn-outline-brand mt-auto" href="contact.html">Get Estimate</a></div></div>
+<div class="col-md-6 col-xl-3 fees-reveal d-flex"><div class="fee-card featured w-100 d-flex flex-column"><span class="badge-featured">POPULAR</span><span class="eyebrow">02</span><h3>Apostille</h3><div class="fee-price">₹1,500+ <small>/ document</small></div><ul class="fee-list flex-grow-1"><li>Document verification</li><li>Apostille processing support</li><li>Status guidance</li><li>Completion coordination</li></ul><a class="btn btn-brand mt-auto" href="contact.html">Get Estimate</a></div></div>
+<div class="col-md-6 col-xl-3 fees-reveal d-flex"><div class="fee-card w-100 d-flex flex-column"><span class="eyebrow">03</span><h3>Embassy Attestation</h3><div class="fee-price">₹2,500+ <small>/ document</small></div><ul class="fee-list flex-grow-1"><li>Requirement review</li><li>Attestation coordination</li><li>Destination-specific guidance</li><li>Completion updates</li></ul><a class="btn btn-outline-brand mt-auto" href="contact.html">Get Estimate</a></div></div>
+<div class="col-md-6 col-xl-3 fees-reveal d-flex"><div class="fee-card w-100 d-flex flex-column"><span class="eyebrow">04</span><h3>Power of Attorney</h3><div class="fee-price">₹1,000+ <small>/ document</small></div><ul class="fee-list flex-grow-1"><li>Drafting assistance</li><li>Formatting review</li><li>Notarization guidance</li><li>Execution checklist</li></ul><a class="btn btn-outline-brand mt-auto" href="contact.html">Get Estimate</a></div></div>
 </div>
 </div>
 </section>
@@ -92,11 +95,11 @@
 <h2>Know the expected processing window before you begin.</h2>
 <p>Turnaround ranges are indicative. Actual completion can change based on document verification, government or embassy processing and public holidays.</p>
 </div>
-<div class="row g-4">
-<div class="col-md-6 col-lg-3 fees-reveal"><div class="turn-card"><div class="turn-time">1–2 Days</div><h3 class="mt-3">Notarization</h3><p class="mb-0 text-secondary">Typical service window for straightforward notarization appointments, subject to document readiness.</p></div></div>
-<div class="col-md-6 col-lg-3 fees-reveal"><div class="turn-card"><div class="turn-time">3–7 Days</div><h3 class="mt-3">Apostille</h3><p class="mb-0 text-secondary">Indicative coordination window for eligible documents where no additional correction is required.</p></div></div>
-<div class="col-md-6 col-lg-3 fees-reveal"><div class="turn-card"><div class="turn-time">7–15 Days</div><h3 class="mt-3">Attestation</h3><p class="mb-0 text-secondary">A sample range for destination-specific attestation processes with multiple stages.</p></div></div>
-<div class="col-md-6 col-lg-3 fees-reveal"><div class="turn-card"><div class="turn-time">1–3 Days</div><h3 class="mt-3">POA</h3><p class="mb-0 text-secondary">Typical preparation window when the required information and signing requirements are ready.</p></div></div>
+<div class="row g-4 align-items-stretch">
+<div class="col-md-6 col-lg-3 fees-reveal d-flex"><div class="turn-card w-100 d-flex flex-column"><div class="turn-time">1–2 Days</div><h3 class="mt-3">Notarization</h3><p class="mb-0 text-secondary mt-auto">Typical service window for straightforward notarization appointments, subject to document readiness.</p></div></div>
+<div class="col-md-6 col-lg-3 fees-reveal d-flex"><div class="turn-card w-100 d-flex flex-column"><div class="turn-time">3–7 Days</div><h3 class="mt-3">Apostille</h3><p class="mb-0 text-secondary mt-auto">Indicative coordination window for eligible documents where no additional correction is required.</p></div></div>
+<div class="col-md-6 col-lg-3 fees-reveal d-flex"><div class="turn-card w-100 d-flex flex-column"><div class="turn-time">7–15 Days</div><h3 class="mt-3">Attestation</h3><p class="mb-0 text-secondary mt-auto">A sample range for destination-specific attestation processes with multiple stages.</p></div></div>
+<div class="col-md-6 col-lg-3 fees-reveal d-flex"><div class="turn-card w-100 d-flex flex-column"><div class="turn-time">1–3 Days</div><h3 class="mt-3">POA</h3><p class="mb-0 text-secondary mt-auto">Typical preparation window when the required information and signing requirements are ready.</p></div></div>
 </div>
 </div>
 </section>

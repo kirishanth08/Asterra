@@ -1,0 +1,149 @@
+import { spawn } from 'child_process';
+import http from 'http';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const edgePath = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const args = [
+  '--headless=new',
+  '--remote-debugging-port=9240',
+  'file:///c:/Users/kiris/Desktop/September - Projects/asterra-notary-document-attestation/index.html'
+];
+
+const proc = spawn(edgePath, args);
+
+setTimeout(async () => {
+  try {
+    const list = await new Promise((res, rej) => {
+      http.get('http://127.0.0.1:9240/json', (r) => {
+        let d = '';
+        r.on('data', c => d += c);
+        r.on('end', () => res(JSON.parse(d)));
+      }).on('error', rej);
+    });
+
+    const page = list.find(x => x.type === 'page');
+    const ws = new WebSocket(page.webSocketDebuggerUrl);
+
+    ws.onopen = () => {
+      ws.send(JSON.stringify({
+        id: 1,
+        method: 'Emulation.setDeviceMetricsOverride',
+        params: { width: 375, height: 812, deviceScaleFactor: 2, mobile: true }
+      }));
+    };
+
+    ws.onmessage = (msg) => {
+      const resp = JSON.parse(msg.data);
+      if (resp.id === 1) {
+        const script = `
+          document.body.classList.add('dark');
+          const toggler = document.querySelector('.navbar-toggler');
+          const themeToggle = document.getElementById('themeToggle');
+          const rtlToggle = document.getElementById('rtlToggle');
+          
+          const wrapper = document.createElement('div');
+          wrapper.className = 'nav-header-actions d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last';
+          
+          toggler.parentNode.insertBefore(wrapper, toggler);
+          wrapper.appendChild(themeToggle);
+          wrapper.appendChild(rtlToggle);
+          wrapper.appendChild(toggler);
+
+          const style = document.createElement('style');
+          style.innerHTML = \`
+            .navbar-brand {
+              background: transparent !important;
+              border: none !important;
+              box-shadow: none !important;
+              padding: 4px 0 !important;
+            }
+            .navbar-brand .brand-mark {
+              background: transparent !important;
+              border: 1.5px solid #c7a25b !important;
+              color: #0b706d !important;
+              width: 40px !important;
+              height: 40px !important;
+              display: grid !important;
+              place-items: center !important;
+              border-radius: 50% !important;
+            }
+            .navbar-brand .brand-mark i {
+              color: #0b706d !important;
+              font-size: 1.15rem !important;
+            }
+            .navbar-brand .brand-name-wrap {
+              color: #14283d !important;
+              font-family: Georgia, serif !important;
+              font-weight: 700 !important;
+              font-size: 1.2rem !important;
+              line-height: 1.05 !important;
+            }
+            .navbar-brand .brand-name-wrap small {
+              color: #5f6d76 !important;
+              display: block !important;
+              font-size: 0.5rem !important;
+              letter-spacing: 0.15em !important;
+              text-transform: uppercase !important;
+              margin-top: 3px !important;
+            }
+            body.dark .navbar-brand .brand-name-wrap { color: #ffffff !important; }
+            body.dark .navbar-brand .brand-name-wrap small { color: #a7b5bd !important; }
+            body.dark .navbar-brand .brand-mark { color: #63c5c0 !important; }
+            body.dark .navbar-brand .brand-mark i { color: #ead08d !important; }
+            .nav-control {
+              min-height: 38px;
+              padding: 0.35rem 0.65rem;
+              font-size: 0.76rem;
+            }
+            @media (max-width: 575.98px) {
+              .navbar-brand .brand-mark { width: 36px !important; height: 36px !important; }
+              .navbar-brand .brand-name-wrap { font-size: 1.05rem !important; }
+              .nav-control { min-height: 36px; padding: 0.3rem 0.55rem; font-size: 0.72rem; }
+              .nav-control .theme-label { display: none; }
+            }
+            @media (max-width: 991.98px) {
+              .site-nav .dropdown-menu {
+                border: 1px solid rgba(20,40,61,.08) !important;
+                background: #f8faf9 !important;
+                border-radius: 12px !important;
+                margin: 0.4rem auto !important;
+                padding: 0.4rem !important;
+                box-shadow: none !important;
+                max-width: 280px !important;
+              }
+              body.dark .site-nav .dropdown-menu {
+                background: #192d3c !important;
+                border-color: rgba(255,255,255,.08) !important;
+              }
+              .site-nav .dropdown-item {
+                text-align: center !important;
+                padding: 0.55rem 0.8rem !important;
+                font-size: 0.92rem !important;
+              }
+            }
+          \`;
+          document.head.appendChild(style);
+        `;
+        ws.send(JSON.stringify({ id: 2, method: 'Runtime.evaluate', params: { expression: script } }));
+      } else if (resp.id === 2) {
+        ws.send(JSON.stringify({
+          id: 3,
+          method: 'Page.captureScreenshot',
+          params: { clip: { x: 0, y: 0, width: 375, height: 180, scale: 1 } }
+        }));
+      } else if (resp.id === 3) {
+        fs.writeFileSync(path.join(__dirname, 'dark_nav_mobile_preview.png'), Buffer.from(resp.result.data, 'base64'));
+        console.log('Saved dark_nav_mobile_preview.png');
+        proc.kill();
+        process.exit(0);
+      }
+    };
+  } catch(e) {
+    console.error(e);
+    proc.kill();
+    process.exit(1);
+  }
+}, 1200);
