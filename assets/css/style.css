@@ -3229,3 +3229,612 @@ body.dark .faq-home .accordion-body {
   transform: translateY(-3px) !important;
   box-shadow: 0 6px 16px rgba(199, 162, 91, 0.35) !important;
 }
+
+/* =====================================================================
+   Asterra PDF Updates - Precision Styling Enhancements
+   ===================================================================== */
+
+/* 1. Header Buttons Uniform Height (Theme, RTL, CTA button) */
+.nav-header-actions .nav-control {
+  height: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  border-radius: 999px !important;
+  padding: 0 0.85rem !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+@media (min-width: 992px) {
+  .nav-header-actions .nav-cta,
+  .nav-header-actions .btn-gold.nav-cta,
+  .nav-header-actions a.nav-cta {
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    border-radius: 999px !important;
+    padding: 0 1.25rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 800 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-header-actions .nav-cta,
+  .nav-header-actions .btn-gold.nav-cta,
+  .nav-header-actions a.nav-cta,
+  a.nav-cta.d-none {
+    display: none !important;
+  }
+
+  .nav-header-actions .nav-control,
+  .nav-header-actions .navbar-toggler {
+    height: 38px !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+  .nav-header-actions .nav-control {
+    border-radius: 999px !important;
+    padding: 0 10px !important;
+  }
+}
+
+/* 2. Homepage 2: "Why Professional" Section Contrast in Light Mode */
+.split-panel {
+  background: linear-gradient(135deg, #102438 0%, #152d42 100%) !important;
+  box-shadow: 0 20px 50px rgba(16, 36, 56, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.split-panel .eyebrow,
+.split-panel span.eyebrow {
+  color: #ead08d !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+.split-panel h2 {
+  color: #ffffff !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+}
+.split-panel p,
+.split-panel p.text-white-50 {
+  color: #e2ecf0 !important;
+  opacity: 1 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+}
+.split-panel .check-list {
+  margin-top: 1.5rem !important;
+}
+.split-panel .check-list li,
+.split-panel .check-list li span,
+.split-panel .check-list span {
+  color: #f0f6f8 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.55 !important;
+}
+.split-panel .check-list i {
+  color: #ead08d !important;
+  font-size: 1.15rem !important;
+}
+.split-panel .info-stack {
+  gap: 16px !important;
+}
+.split-panel .info-item {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px !important;
+  padding: 18px 22px !important;
+  transition: transform 0.25s ease, background 0.25s ease !important;
+}
+.split-panel .info-item:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  transform: translateX(4px) !important;
+}
+.split-panel .info-item strong {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 4px !important;
+}
+.split-panel .info-item span,
+.split-panel .info-item .text-white-50 {
+  color: #d2e0e6 !important;
+  opacity: 1 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.5 !important;
+}
+
+/* 3. Homepage 2: "Before Your Appointment" Section Contrast in Light Mode */
+.doc-band {
+  background: #edf3f1 !important;
+  color: #14283d !important;
+}
+.doc-band .eyebrow {
+  color: #0b706d !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+.doc-band h2,
+.doc-band .home2-section-title {
+  color: #14283d !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+}
+.doc-band p {
+  color: #4a5c68 !important;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+}
+.doc-band .btn-dark {
+  background: #14283d !important;
+  border-color: #14283d !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.doc-band .btn-dark:hover {
+  background: #0b706d !important;
+  border-color: #0b706d !important;
+  color: #ffffff !important;
+}
+.doc-band .bg-white {
+  background: #ffffff !important;
+  border: 1px solid rgba(20, 40, 61, 0.08) !important;
+  box-shadow: 0 15px 40px rgba(20, 40, 61, 0.07) !important;
+}
+.doc-band .bg-white strong {
+  color: #14283d !important;
+  font-weight: 700 !important;
+  font-size: 1.02rem !important;
+}
+.doc-band .bg-white .text-muted,
+.doc-band .bg-white p.text-muted {
+  color: #5d6f7a !important;
+  --bs-secondary-color: #5d6f7a !important;
+  font-size: 0.92rem !important;
+}
+.doc-band .doc-check i {
+  color: #0b706d !important;
+  font-size: 1.35rem !important;
+}
+
+body.dark .doc-band {
+  background: #111f2e !important;
+  color: #e8f0f3 !important;
+}
+body.dark .doc-band .eyebrow {
+  color: #ead08d !important;
+}
+body.dark .doc-band h2,
+body.dark .doc-band .home2-section-title {
+  color: #ffffff !important;
+}
+body.dark .doc-band p {
+  color: #c7d8e0 !important;
+}
+body.dark .doc-band .btn-dark {
+  background: #1c3245 !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: #ffffff !important;
+}
+body.dark .doc-band .bg-white {
+  background: #172a38 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+body.dark .doc-band .bg-white strong {
+  color: #ffffff !important;
+}
+body.dark .doc-band .bg-white .text-muted,
+body.dark .doc-band .bg-white p.text-muted {
+  color: #a7bcc8 !important;
+  --bs-secondary-color: #a7bcc8 !important;
+}
+body.dark .doc-band .doc-check i {
+  color: #8bd7d1 !important;
+}
+
+/* 4. Home1 Section 2, Section 3 & Who We Serve Card Images */
+.use-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 180px;
+  background: #f0f4f3;
+}
+.use-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.use-card:hover .use-card-img-wrap img {
+  transform: scale(1.06);
+}
+.home-service-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  height: 160px;
+  background: #f0f4f3;
+}
+.home-service-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.home-service-card:hover .home-service-img-wrap img {
+  transform: scale(1.06);
+}
+body.dark .use-card-img-wrap,
+body.dark .home-service-img-wrap {
+  background: #1a2c3a;
+}
+
+/* 5. Home 2 "How It Works" Section Illustrations */
+.workflow-card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px 24px;
+  transition: all 0.35s ease;
+}
+.workflow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(20, 40, 61, 0.08);
+  border-color: rgba(199, 162, 91, 0.4);
+}
+.workflow-art-wrap {
+  width: 76px;
+  height: 76px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(11, 112, 109, 0.08) 0%, rgba(199, 162, 91, 0.12) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(199, 162, 91, 0.28);
+  margin-bottom: 1.25rem;
+  transition: all 0.35s ease;
+  color: var(--teal);
+}
+.workflow-art-wrap svg {
+  width: 44px;
+  height: 44px;
+  transition: transform 0.35s ease;
+}
+.workflow-card:hover .workflow-art-wrap {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(135deg, rgba(11, 112, 109, 0.15) 0%, rgba(199, 162, 91, 0.25) 100%);
+  border-color: #c7a25b;
+  box-shadow: 0 8px 22px rgba(199, 162, 91, 0.25);
+  color: #0b706d;
+}
+body.dark .workflow-card {
+  background: #14232f;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+body.dark .workflow-card:hover {
+  border-color: rgba(199, 162, 91, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+body.dark .workflow-art-wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(234, 208, 141, 0.2);
+  color: #ead08d;
+}
+
+/* 6. Universal Responsive Hero Top Padding Fix (360px, 768px, 1024px) */
+.welcome-hero,
+.home2-hero,
+.fees-hero,
+.blog-hero,
+.contact-hero,
+main > section.hero,
+main > section:first-of-type {
+  padding-top: 160px !important;
+}
+
+@media (max-width: 1024px) {
+  .welcome-hero,
+  .home2-hero,
+  .fees-hero,
+  .blog-hero,
+  .contact-hero,
+  main > section.hero,
+  main > section:first-of-type {
+    padding-top: 155px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .welcome-hero,
+  .home2-hero,
+  .fees-hero,
+  .blog-hero,
+  .contact-hero,
+  main > section.hero,
+  main > section:first-of-type {
+    padding-top: 150px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .welcome-hero,
+  .home2-hero,
+  .fees-hero,
+  .blog-hero,
+  .contact-hero,
+  main > section.hero,
+  main > section:first-of-type {
+    padding-top: 145px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .welcome-hero,
+  .home2-hero,
+  .fees-hero,
+  .blog-hero,
+  .contact-hero,
+  main > section.hero,
+  main > section:first-of-type {
+    padding-top: 140px !important;
+  }
+}
+
+/* 7. About Page: "By The Numbers" 360px Container Overflow Fix */
+.stats .stat-card {
+  height: 100% !important;
+  padding: 24px 20px !important;
+  border-radius: 18px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+.stats .stat-number {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(2rem, 5.5vw, 2.7rem) !important;
+  font-weight: 700 !important;
+  color: #ead08d !important;
+  line-height: 1.15 !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+.stats .stat-label {
+  font-size: 0.95rem !important;
+  color: #cdd9df !important;
+  margin-top: 6px !important;
+}
+@media (max-width: 575.98px) {
+  .stats .stat-number {
+    font-size: clamp(1.85rem, 7vw, 2.3rem) !important;
+  }
+  .stats .stat-card {
+    padding: 18px 16px !important;
+  }
+}
+
+/* 8. Blog Page: Top Search & Filter Bar Strip */
+.blog-search-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(20, 40, 61, 0.04);
+}
+.blog-search-strip .search-box {
+  width: 100%;
+  padding: 0.75rem 1.15rem 0.75rem 2.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+.blog-search-strip .search-box:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(11, 112, 109, 0.18);
+  background: #ffffff;
+}
+body.dark .blog-search-strip {
+  background: #14232f;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+body.dark .blog-search-strip .search-box {
+  background: #0d1720;
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #e9f0f2;
+}
+body.dark .blog-search-strip .search-box:focus {
+  background: #111f2e;
+  border-color: #ead08d;
+  box-shadow: 0 0 0 3px rgba(199, 162, 91, 0.25);
+}
+
+/* ==========================================================================
+   Home 1: Service Cards - Image Header & Uniform Alignment
+   ========================================================================== */
+.home-service-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+}
+.home-service-card .home-service-art {
+  display: none !important;
+}
+.home-service-card .home-service-img-wrap {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 195px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: #f0f4f3 !important;
+  flex-shrink: 0 !important;
+}
+.home-service-card .home-service-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.45s ease !important;
+}
+.home-service-card:hover .home-service-img-wrap img {
+  transform: scale(1.06) !important;
+}
+.home-service-card .home-service-body {
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+.home-service-card .home-service-body h4 {
+  min-height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 0.5rem !important;
+}
+.home-service-card .home-service-body p {
+  flex-grow: 1 !important;
+  margin-bottom: 1.25rem !important;
+}
+.home-service-card .home-service-body a {
+  margin-top: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* ==========================================================================
+   Services Page: Full Container Image Fitting & Uniform Card Heights
+   ========================================================================== */
+.service-rows {
+  width: 100% !important;
+  max-width: 1080px !important;
+  margin: 0 auto !important;
+}
+.service-row {
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 22px !important;
+  box-shadow: 0 8px 26px rgba(20, 40, 61, 0.05) !important;
+}
+.service-layout {
+  width: 100% !important;
+  height: 100% !important;
+}
+.service-media {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+.service-media img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+.service-row:hover .service-media img {
+  transform: scale(1.05) !important;
+}
+
+@media (min-width: 992px) {
+  .service-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+  .service-row.flip .service-layout {
+    flex-direction: row-reverse !important;
+  }
+  .service-media {
+    position: relative !important;
+    flex: 0 0 44% !important;
+    width: 44% !important;
+    align-self: stretch !important;
+    overflow: hidden !important;
+    min-height: 440px !important;
+  }
+  .service-media img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  .service-copy {
+    flex: 0 0 56% !important;
+    width: 56% !important;
+    padding: 38px 44px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 440px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .service-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .service-media {
+    width: 100% !important;
+    height: 260px !important;
+    min-height: 200px !important;
+    flex: none !important;
+  }
+  .service-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .service-copy {
+    width: 100% !important;
+    padding: 28px 24px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service-media {
+    height: 215px !important;
+  }
+  .service-copy {
+    padding: 22px 18px !important;
+  }
+}
+
+

@@ -307,30 +307,34 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', onScroll, { passive: true });
 
     // 4. Robust Hamburger & Mobile Collapse Controller
-    const togglers = document.querySelectorAll('.navbar-toggler');
-    togglers.forEach(function(toggler) {
-      if (toggler.dataset.asterraBound) return;
-      toggler.dataset.asterraBound = 'true';
+    // If Bootstrap 5 is active, Bootstrap's data-api handles [data-bs-toggle="collapse"] smoothly.
+    // If Bootstrap is not loaded (offline/CDN blocked), provide full vanilla fallback.
+    if (typeof bootstrap === 'undefined') {
+      const togglers = document.querySelectorAll('.navbar-toggler');
+      togglers.forEach(function(toggler) {
+        if (toggler.dataset.asterraBound) return;
+        toggler.dataset.asterraBound = 'true';
 
-      toggler.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetSel = toggler.getAttribute('data-bs-target') || '#mainMenu';
-        const menu = document.querySelector(targetSel);
-        if (!menu) return;
+        toggler.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetSel = toggler.getAttribute('data-bs-target') || '#mainMenu';
+          const menu = document.querySelector(targetSel);
+          if (!menu) return;
 
-        // Toggle show class
-        const isOpen = menu.classList.contains('show');
-        if (isOpen) {
-          menu.classList.remove('show');
-          toggler.setAttribute('aria-expanded', 'false');
-          toggler.classList.add('collapsed');
-        } else {
-          menu.classList.add('show');
-          toggler.setAttribute('aria-expanded', 'true');
-          toggler.classList.remove('collapsed');
-        }
+          // Toggle show class
+          const isOpen = menu.classList.contains('show');
+          if (isOpen) {
+            menu.classList.remove('show');
+            toggler.setAttribute('aria-expanded', 'false');
+            toggler.classList.add('collapsed');
+          } else {
+            menu.classList.add('show');
+            toggler.setAttribute('aria-expanded', 'true');
+            toggler.classList.remove('collapsed');
+          }
+        });
       });
-    });
+    }
 
     // 5. Responsive / Fallback Dropdown Controller (for offline / CDN blocked environments)
     if (typeof bootstrap === 'undefined') {
@@ -387,21 +391,38 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-    // 6. Close mobile menu when regular navigation link is clicked
+    // 6. Close mobile menu when regular navigation link is clicked or when tapping outside
+    function closeMobileMenu() {
+      const openMenu = document.querySelector('.navbar-collapse.show');
+      if (!openMenu) return;
+      if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+        const bsCollapse = bootstrap.Collapse.getInstance(openMenu) || new bootstrap.Collapse(openMenu, { toggle: false });
+        bsCollapse.hide();
+      } else {
+        openMenu.classList.remove('show');
+        const toggler = document.querySelector('.navbar-toggler');
+        if (toggler) {
+          toggler.setAttribute('aria-expanded', 'false');
+          toggler.classList.add('collapsed');
+        }
+      }
+    }
+
     document.querySelectorAll('.navbar-collapse a:not(.dropdown-toggle)').forEach(function(link) {
       link.addEventListener('click', function() {
         if (window.innerWidth < 992) {
-          const menu = link.closest('.navbar-collapse');
-          const toggler = document.querySelector('.navbar-toggler');
-          if (menu && menu.classList.contains('show')) {
-            menu.classList.remove('show');
-            if (toggler) {
-              toggler.setAttribute('aria-expanded', 'false');
-              toggler.classList.add('collapsed');
-            }
-          }
+          closeMobileMenu();
         }
       });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth < 992) {
+        const openMenu = document.querySelector('.navbar-collapse.show');
+        if (openMenu && !openMenu.contains(e.target) && !e.target.closest('.navbar-toggler')) {
+          closeMobileMenu();
+        }
+      }
     });
 
     // 7. Highlight active nav link based on current URL
